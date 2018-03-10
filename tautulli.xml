@@ -17,7 +17,7 @@ This is the official container supported by the Tautulli devs.</Overview>
   <Icon>https://raw.githubusercontent.com/Tautulli/docker-template/master/img/logo-circle.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1520709339</DateInstalled>
+  <DateInstalled>1520711353</DateInstalled>
   <DonateText/>
   <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=6XPPKTDSX9QFL&amp;amp;lc=US&amp;amp;item_name=PlexPy&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted</DonateLink>
   <DonateImg/>
@@ -43,7 +43,7 @@ This is the official container supported by the Tautulli devs.</Description>
     </Volume>
     <Volume>
       <HostDir/>
-      <ContainerDir>/logs</ContainerDir>
+      <ContainerDir>/log</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -59,9 +59,9 @@ This is the official container supported by the Tautulli devs.</Description>
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/tautulli/" Mode="rw" Description="Config location" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/tautulli/</Config>
-  <Config Name="Plex Logs" Target="/logs" Default="" Mode="rw" Description="Path to Plex logs" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="HTTP Port" Target="" Default="8181" Mode="tcp" Description="Tautulli HTTP port" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/tautulli/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/tautulli/</Config>
+  <Config Name="HTTP Port" Target="" Default="8181" Mode="tcp" Description="Container Port: 8181" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
+  <Config Name="Plex Logs" Target="/log" Default="" Mode="rw" Description="Container Path: /log" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
