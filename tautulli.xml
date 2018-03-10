@@ -10,6 +10,8 @@
   <Project>http://tautulli.com/</Project>
   <Overview>Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.&#xD;
 &#xD;
+This container includes the plexapi python package for use with scripts.&#xD;
+&#xD;
 This is the official container supported by the Tautulli devs.</Overview>
   <Category>Tools: MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:8181]/</WebUI>
