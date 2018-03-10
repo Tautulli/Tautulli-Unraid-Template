@@ -13,13 +13,13 @@
 This is the official container supported by the Tautulli devs.</Overview>
   <Category>Tools: MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:8181]/</WebUI>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Tautulli/Tautulli-Docker/master/img/logo-circle.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Tautulli/docker-template/master/tautulli.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Tautulli/docker-template/master/img/logo-circle.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1520708215</DateInstalled>
+  <DateInstalled>1520709339</DateInstalled>
   <DonateText/>
-  <DonateLink/>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=6XPPKTDSX9QFL&amp;amp;lc=US&amp;amp;item_name=PlexPy&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted</DonateLink>
   <DonateImg/>
   <MinVer/>
   <Description>Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.&#xD;
@@ -37,7 +37,7 @@ This is the official container supported by the Tautulli devs.</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/cache/appdata/tautulli/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -59,7 +59,7 @@ This is the official container supported by the Tautulli devs.</Description>
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/tautulli/" Mode="rw" Description="Config location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/tautulli/" Mode="rw" Description="Config location" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/tautulli/</Config>
   <Config Name="Plex Logs" Target="/logs" Default="" Mode="rw" Description="Path to Plex logs" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
