@@ -46,7 +46,7 @@ This is the official container supported by the Tautulli devs.</Description>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>path to plex logs</HostDir>
       <ContainerDir>/plex_logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
