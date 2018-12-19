@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>tautulli.com/#support</Support>
+  <Support>https://tautulli.com/#support</Support>
   <Project>http://tautulli.com/</Project>
   <Overview>Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.&#xD;
 &#xD;
