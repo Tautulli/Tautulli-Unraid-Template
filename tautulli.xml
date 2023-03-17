@@ -11,6 +11,10 @@
     <Tag>beta</Tag>
     <TagDescription>Latest beta release of Tautulli. Use with caution!</TagDescription>
   </Branch>
+  <Branch>
+    <Tag>nightly</Tag>
+    <TagDescription>The bleeding edge of Tatulli development. Use with caution!</TagDescription>
+  </Branch>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://tautulli.com/#support</Support>
